@@ -8,15 +8,18 @@ fields:
     label:
       de: OG-Titel
       en: OG Title
+      fr: OG Titre
     help:
       de: Der Titel der Seite, wie er in Open Graph erscheinen soll. Wird *Seitentitel* als Fallback verwenden.
       en: The title of your object as it should appear within the graph. Will use *page title* as fallback.
+      fr: Le titre de la page tel que vous souhaitez qu'il apparaisse dans Open Graph. Utilisera *PageTitle* comme alternative.
     placeholder: '{{ page.title }}'
     type: text
   ogTemplate:
     label:
       en: Title Template (Override)
       de: Benutzerdefinierte OG-Titelvorlage
+      fr: Modèle de titre OG personnalisé (Outrepasse)
     type: text
     width: 1/2
     placeholder: '{{ site.ogTemplate }}'
@@ -27,32 +30,40 @@ fields:
     label:
       en: Inherit Open Graph template for child pages?
       de: Sollen Unterseiten die OG-Titelvorlage erben?
+      fr: Hériter du modèle de titre OG personnalisé pour les pages enfants ?
     type: toggle
     width: 1/2
     help:
       de: Wenn aktiviert, wird die OG-Titelvorlage von Unterseiten übernommen.
       en: If enabled, the OG title template will be inherited by child pages.
+      fr: Si activé, les sous-pages hériteront du modèle de titre OG.
     text:
       - de: Nicht vererben, globale Titelvorlage verwenden
         en: Don't inherit, use global title template
+        fr: Ne pas hériter, utiliser le modèle de titre global
       - de: Vorlage vererben, Unterseiten benutzen
         en: Inherit, use parents' page title template
+        fr: Hériter du modèle, utiliser des sous-pages
   ogDescription:
     label:
       de: OG-Beschreibung
       en: OG Description
+      fr: OG Description
     help:
       de: Eine ein- bis zweisätzige Beschreibung der Seite. Wird *Seitenbeschreibung*, bzw. die globale *Open Graph-* oder *Seitenbeschreibung* als Fallback verwenden.
       en: A one to two sentence description of your object. Will use *page description* and *site description* as fallbacks.
+      fr: Une description d'une à deux phrases de la page. Utilisera *PageDescription* ou le global *Open Graph* ou *PageDescription* comme alternative.
     placeholder: '{{ page.metaDescription.or(site.ogDescription.or(site.metaDescription)) }}'
     type: text
   ogImage:
     label:
       de: OG-Bild (1200x630)
       en: OG Image (1200x630)
+      fr: OG Image (1200x630)
     help:
       en: Wird automatisch zugeschnitten.
       de: An image which should represent your object within the graph. Will be cropped automatically. Will use *site OG image* as fallback.
+      fr: Sera recadrée automatiquement.
     type: files
     width: 1/2
     multiple: false
@@ -61,6 +72,7 @@ fields:
     label:
       de: OG-Seitenname
       en: OG Site Name
+      fr: OG Nom du site
     help:
       de: Wenn die Seite Teil einer größeren Website ist, gebe den Namen an der für die gesamte Website angezeigt werden soll. Wird der *Seitentitel* als Fallback verwenden.
       en: If your object is part of a larger web site, the name which should be displayed for the overall site. Will use *site title* as fallback.
@@ -71,6 +83,7 @@ fields:
     label:
       de: Kanonische OG-URL
       en: OG URL
+      fr: OG URL Canonique
     help:
       de: Die kanonische URL, die als permanente ID in den Open Graph-Metadaten verwendet werden soll.
       en: The canonical URL of your object that will be used as its permanent ID in the graph.
@@ -81,18 +94,22 @@ fields:
     label:
       de: OG-Audio
       en: OG Audio
+      fr: OG Audio
     help:
       de: Eine URL zu einer Audio-Datei, die diese Website ergänzt.
       en: The URL of an audio file to accompany this object.
+      fr: L'URL d'un fichier audio pour accompagner cet objet.
     type: url
     width: 1/2
   ogVideo:
     label:
       de: OG-Video
       en: OG Video
+      fr: OG Video
     help:
       de: Eine URL zu einer Video-Datei, die diese Website ergänzt.
       en: The URL of a video file that complements this object.
+      fr: L'URL d'un fichier vidéo qui complète cet objet.
     type: url
     width: 1/2
 #  ogType:

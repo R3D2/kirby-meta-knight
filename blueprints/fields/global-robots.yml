@@ -4,95 +4,116 @@ fields:
     label:
       de: Richtlinien für Suchmaschinen (Robots)
       en: Robots
+      fr: Robots
     type: headline
     numbered: false
   robotsNoIndex:
     label:
       en: No Index
       de: Seite nicht indexieren
+      fr: Ne pas indexer la page
     type: select
     options:
       enabled:
         de: Aktiviert, Seite darf nicht indexiert werden
         en: Enabled
+        fr: Activé, la page ne doit pas être indexée
       disabled:
         de: Deaktiviert, Seite darf indexiert werden
         en: Disabled
+        fr: Désactivé, la page peut être indexée
     default: enabled
     required: true
     width: 1/2
     help:
       de: Suchmaschinen dürfen diese Seite(n) nicht indexieren und anzeigen.
       en: Search engines will not index and display page/s.
+      fr: Les moteurs de recherche ne sont pas autorisés à indexer et à afficher cette ou ces pages.
   robotsNoFollow:
     label:
       en: No Follow
       de: Links nicht verfolgen
+      fr: Links nicht verfolgen
     type: select
     options:
       enabled:
         de: Aktiviert, Links auf dieser Seite dürfen nicht verfolgt werden
         en: Enabled
+        fr: Activé, les liens sur cette page ne doivent pas être suivis
       disabled:
         de: Deaktiviert, Links auf dieser Seite dürfen verfolgt werden
         en: Disabled
+        fr: Désactivé, les liens sur cette page peuvent être suivis
     default: enabled
     required: true
     width: 1/2
     help:
       de: Suchmaschinen dürfen auf der Seite verlinkte Links nicht verfolgen.
       en: Search engines will not follow links.
+      fr: Les moteurs de recherche ne doivent pas suivre les liens liés à partir du site.
   robotsNoArchive:
     label:
       en: No Archive
       de: Seite nicht archivieren
+      fr: Ne pas archiver la page
     type: select
     options:
       enabled:
         de: Aktiviert, Seite darf nicht archiviert werden
         en: Enabled
+        fr: Activé, la page ne peut pas être archivée
       disabled:
         de: Deaktiviert, Seite darf archiviert werden
         en: Disabled
+        fr: Désactivé, la page peut être archivée
     default: enabled
     required: true
     width: 1/2
     help:
       de: Suchmaschinen dürfen diese Seite(n) nicht archivieren.
       en: Search engines will not cache page/s.
+      fr: Les moteurs de recherche ne sont pas autorisés à archiver cette ou ces pages.
   robotsNoImageIndex:
     label:
       en: No Image Index
       de: Bilder nicht indexieren
+      fr: Ne pas indexer les images
     type: select
     options:
       enabled:
         de: Aktiviert, Bilder dürfen nicht indexiert werden
         en: Enabled
+        fr: Activé, les images ne doivent pas être indexées
       disabled:
         de: Deaktiviert, Bilder dürfen indexiert werden
         en: Disabled
+        fr: Désactivé, les images peuvent être indexées
     default: enabled
     required: true
     width: 1/2
     help:
       de: Bilder auf dieser Seite nicht indexieren und in den Suchergebnissen anzeigen.
       en: Search engines will not associate page/s with image search results.
+      fr: N'indexez pas les images sur cette page et affichez-les dans les résultats de recherche.
   robotsNoSnippet:
     label:
       de: Keine Kurzbschreibungen
       en: No Snippet
+      fr: Pas de descriptions courtes
     type: select
     options:
       enabled:
         de: Aktiviert, Kurzbeschreibungen dürfen nicht angezeigt werden
         en: Enabled
+        fr: Activé, les descriptions courtes peuvent ne pas être affichées
       disabled:
         de: Deaktiviert, Kurzbeschreibungen dürfen angezeigt werden
         en: Disabled
+        fr: Désactivé, de courtes descriptions peuvent être affichées
     default: enabled
     required: true
     width: 1/2
     help:
       de: Suchmaschinen dürfen keine Kurzbeschreibungen anzeigen.
       en: Search engines will not display description snippets for page/s.
+      fr: Les moteurs de recherche ne sont pas autorisés à afficher de courtes descriptions.

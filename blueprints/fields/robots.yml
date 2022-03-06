@@ -5,28 +5,33 @@ fields:
       default:
         de: Standardeinstellung
         en: Site Default
+        fr: Paramètres par défaut
     default: default
   robotsNoFollow:
     options:
       default:
         de: Standardeinstellung
         en: Site Default
+        fr: Paramètres par défaut
     default: default
   robotsNoArchive:
     options:
       default:
         de: Standardeinstellung
         en: Site Default
+        fr: Paramètres par défaut
     default: default
   robotsNoImageIndex:
     options:
       default:
         de: Standardeinstellung
         en: Site Default
+        fr: Paramètres par défaut
     default: default
   robotsNoSnippet:
     options:
       default:
         de: Standardeinstellung
         en: Site Default
+        fr: Paramètres par défaut
     default: default

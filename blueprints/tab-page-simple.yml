@@ -1,6 +1,7 @@
 label:
   de: Metadaten & SEO
   en: Meta Information (SEO)
+  fr: Métadonnées & SEO
 icon: search
 
 columns:
@@ -32,6 +33,7 @@ columns:
         headline:
           en: Google Search Preview
           de: Google Suche
+          fr: Recherche Google Aperçu
         type: google-preview
   openGraph:
     width: 2/3
@@ -70,6 +72,7 @@ columns:
         headline:
           en: Facebook Sharing Preview
           de: Facebook Sharing
+          fr: Partage Facebook Aperçu
         type: facebook-preview
   twitter:
     width: 2/3
@@ -98,4 +101,5 @@ columns:
         headline:
           en: Twitter Card Preview
           de: Twitter Card
+          fr: Carte Twitter Aperçu
         type: twitter-preview

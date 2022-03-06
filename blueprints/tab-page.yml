@@ -1,6 +1,7 @@
 label:
   de: Metadaten & SEO
   en: Meta Information (SEO)
+  fr: Métadonnées & SEO
 icon: search
 
 columns:
@@ -19,6 +20,7 @@ columns:
         headline:
           en: Google Search Preview
           de: Google Suche
+          fr: Recherche Google Aperçu
         type: google-preview
   openGraph:
     width: 2/3
@@ -35,6 +37,7 @@ columns:
         headline:
           en: Facebook Search Preview
           de: Facebook Suche
+          fr: Recherche Facebook Aperçu
         type: facebook-preview
   twitter:
     width: 2/3
@@ -50,6 +53,7 @@ columns:
         headline:
           en: Twitter Search Preview
           de: Twitter Suche
+          fr: Recherche Twitter Aperçu
         type: twitter-preview
   robots:
     width: 2/3

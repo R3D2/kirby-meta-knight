@@ -4,39 +4,47 @@ fields:
     label:
       en: Global Meta Information
       de: Globale Metadaten-Einstellungen
+      fr: Paramètres de Métadonnées Globales
     type: headline
     numbered: false
   metaTemplate:
     label:
       en: Title Template
       de: Titel-Vorlage
+      fr: Modèle de Titre
     type: text
     width: 1/2
     help:
       de: Eine Vorlage, die für alle Seitentitel verwendet werden soll. "\{\{ title }}" wird durch den Unterseitentitel oder den benutzerdefinierten Titel ersetzt.
       en: A template that is used for all page titles as it should be displayed on search engines. "\{\{ title }}" will be replaced by the page title or the user defined title.
+      fr: Un modèle à utiliser pour tous les titres de page. "\{\{ titre }}" sera remplacé par le titre de la sous-page ou le titre personnalisé.
   metaDescription:
     label:
       de: Beschreibung
       en: Description
+      fr: Description
     type: text
     width: 1/2
     help:
       de: Eine kurze Beschreibung des Inhalts der Seite, welche von Suchmaschinen angezeigt werden soll.
       en: A short description of the site/page that will be displayed underneath the page title by search engines.
+      fr: Une brève description du contenu de la page à afficher par les moteurs de recherche.
   metaAuthor:
     label:
       de: 'Autor*innen'
       en: Author/s
+      fr: Auteur.ice.s
     width: 1/2
     type: text
     help:
       de: Der Name der Autor\*innen der Seite. Können Personen oder eine Organisation sein.
       en: The name of the author of the page. Can be an entity or a person.
+      fr: Le nom des auteurs de la page. Peut être une personne ou une organisation.
   metaImage:
     label:
       de: Bild
       en: Image
+      fr: Image
     width: 1/2
     type: files
     multiple: false
@@ -45,5 +53,6 @@ fields:
     label:
       de: Telefonnummer
       en: Phone Number
+      fr: Numéro de Téléphone
     icon: phone
     type: text

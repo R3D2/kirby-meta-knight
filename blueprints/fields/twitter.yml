@@ -4,59 +4,72 @@ fields:
     label:
       en: Twitter Card
       de: Twitter-Karte
+      fr: Carte Twitter
     type: headline
     numbered: false
   twitterTitle:
     label:
       en: Twitter Title
       de: Twitter-Titel
+      fr: Titre Twitter
     type: text
     maxlength: 70
     placeholder: "{{ page.twitterTitleComputed }}"
     help:
       de: Der Titel der Seite, wie er auf Twitter erscheinen soll. Wird *Seitentitel* als Fallback verwenden.
       en: The title of your page as it should appear on Twitter. Will use *page title* as fallback.
+      fr: Le titre de la page tel que vous souhaitez qu'il apparaisse sur Twitter. Utilisera *page title* comme alternative.
   twitterTemplate:
     label:
       en: Twitter Title Template (Override)
       de: Benutzerdefinierte Twitter-Titelvorlage
+      fr: Modèle de Titre Twitter (Outrepasse)
     type: text
     width: 1/2
     placeholder: '{{ site.twitterTemplate }}'
     help:
       de: Eine Vorlage, die für alle Twitterkarten-Titel verwendet werden soll. "\{\{ title }}" wird durch den Unterseitentitel oder den benutzerdefinierten Titel ersetzt.
       en: A template that is used for all Twitter card titles. "\{\{ title }}" will be replaced by the page title or the user defined title.
+      fr: Un modèle à utiliser pour tous les titres de cartes Twitter. "\{\{ title }}" sera remplacé par le titre de la sous-page ou le titre personnalisé.
   inheritTwitterTemplate:
     label:
       en: Inherit Twitter template for child pages?
       de: Sollen Unterseiten die Twitter-Titelvorlage erben?
+      fr: Hériter du modèle Twitter pour les pages enfants?
     type: toggle
     width: 1/2
     help:
       de: Wenn aktiviert, wird die Twitter-Titelvorlage von Unterseiten übernommen.
       en: If enabled, the Twitter template will be inherited by child pages.
+      fr: S'il est activé, le modèle de titre Twitter sera hérité des sous-pages.
     text:
       - de: Nicht vererben, globale Titelvorlage verwenden
         en: Don't inherit, use global title template
+        fr: Ne pas hériter, utiliser le modèle de titre global
       - de: Vorlage vererben, Unterseiten benutzen
         en: Inherit, use parents' page title template
+        fr: Hériter du modèle, utiliser des sous-pages
   twitterDescription:
     label:
       en: Twitter Description
       de: Twitter-Beschreibung
+      fr: Twitter Description
     type: text
     maxlength: 300
     placeholder: "{{ site.twitterDescription.or(site.metaDescription) }}"
     help:
       de: Eine ein- bis zweisätzige Beschreibung der Seite. Wird *Seitenbeschreibung*, bzw. die *globale Seitenbeschreibung* als Fallback verwenden.
       en: A one to two sentence description of your page. Will use *page description* and *site description* as fallbacks.
+      fr: Une description d'une à deux phrases de la page. Utilisera la *description de la page* ou la *description globale de la page* comme alternative.
   twitterImage:
     label:
       en: Twitter Image (1200x675)
       de: Twitter-Bild (1200x675)
+      fr: Image Twitter (1200x675)
     help:
       de: Wird automatisch zugeschnitten.
       en: Will be cropped automatically.
+      fr: Sera recadrée automatiquement.
     type: files
     uploads: seo-image
     multiple: false
@@ -65,22 +78,27 @@ fields:
     label:
       de: Kartentyp
       en: Card Type
+      fr: Type de Carte
     width: 1/2
     type: select
     options:
       summary_large_image:
         de: Übersichtskarte mit großem Bild
         en: Summary Card with Large Image
+        fr: Carte résumé avec grande Image
       summary:
         de: Übersichtskarte
         en: Summary Card
+        fr: Carte Résumé
     help:
       de: Das Kartenlayout, das Twitter für Links zu dieser Seite verwenden soll.
       en: The card layout Twitter uses for links to this page.
+      fr: La disposition de la carte que vous souhaitez que Twitter utilise pour créer un lien vers cette page.
   twitterSite:
     label:
       de: @username der Website
       en: @username of website
+      fr: @nom d'utilisateur du site
     type: text
     placeholder: "{{ site.twitterSite }}"
     width: 1/2
@@ -88,6 +106,7 @@ fields:
     label:
       de: "@username der Autor*in"
       en: @username of content creator
+      fr: @nom d'utilisateur de l'auteur.ice
     type: text
     placeholder: "{{ site.twitterCreator }}"
     width: 1/2

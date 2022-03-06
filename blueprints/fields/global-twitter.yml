@@ -4,21 +4,25 @@ fields:
     label:
       en: Twitter Card
       de: Twitter-Karte
+      fr: Carte Twitter
     type: headline
     numbered: false
   twitterTemplate:
     label:
       en: Twitter Title Template
       de: Twitter-Titelvorlage
+      fr: Modèle de titre Twitter
     type: text
     width: 1/2
     help:
       de: Eine Vorlage, die für alle Twitterkarten-Titel verwendet werden soll. "\{\{ title }}" wird durch den Unterseitentitel oder den benutzerdefinierten Titel ersetzt.
       en: A template that is used for all Twitter card titles. "\{\{ title }}" will be replaced by the page title or the user defined title.
+      fr: Un modèle utilisé pour tous les titres de cartes Twitter. "\{\{ titre }}" sera remplacé par le titre de la page ou le titre défini par l'utilisateur.
   twitterDescription:
     label:
       de: Twitter-Beschreibung
       en: Twitter Description
+      fr: Description Twitter
     type: text
     width: 1/2
     maxlength: 300
@@ -26,13 +30,16 @@ fields:
     help:
       de: Eine ein- bis zweisätzige Beschreibung der Seite. Wird als Fallback verwendet, wenn keine Seitenbeschreibung angegeben ist.
       en: A one to two sentence description of your page. Will be used as fallback if no page description is specified.
+      fr: Une description d'une à deux phrases de la page. Utilisé comme alternative si aucune description de page n'est spécifiée.
   twitterImage:
     label:
       en: Twitter Image (1200x675)
       de: Twitter-Bild (1200x675)
+      fr: Image Twitter (1200x675)
     help:
       de: Wird automatisch zugeschnitten.
       en: Will be cropped automatically.
+      fr: Sera recadrée automatiquement.
     type: files
     uploads: seo-image
     multiple: false
@@ -41,6 +48,7 @@ fields:
     label:
       de: Kartentyp
       en: Card Type
+      fr: Type de Carte
     width: 1/2
     type: select
     default: summary
@@ -49,16 +57,20 @@ fields:
       summary:
         de: Übersichtskarte
         en: Summary Card
+        fr: Carte Résumé
       summary_large_image:
         de: Übersichtskarte mit großem Bild
         en: Summary Card with Large Image
+        fr: Carte résumé avec grande Image
     help:
       de: Das Kartenlayout, das Twitter für Links zu dieser Seite verwenden soll.
       en: The card layout Twitter uses for links to this page.
+      fr: La disposition de la carte que vous souhaitez que Twitter utilise pour créer un lien vers cette page.
   twitterSite:
     label:
       de: @username der Website
       en: @username of website
+      fr: @nom d'utilisateur du site
     type: text
     placeholder: "{{ site.twitterSite }}"
     width: 1/2
@@ -66,6 +78,7 @@ fields:
     label:
       de: "@username der Autor*in"
       en: @username of content creator
+      fr: @nom d'utilisateur de l'auteur.ice
     type: text
     placeholder: "{{ site.twitterCreator }}"
     width: 1/2

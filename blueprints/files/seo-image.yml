@@ -8,16 +8,19 @@ fields:
     label:
       de: Alternativer Text
       en: Alt Text
+      fr: Texte Alternatif
     type: text
     width: 1/2
   link:
     label:
       de: Link
       en: Link
+      fr: Lien
     type: url
     width: 1/2
   caption:
     label:
       de: Bildunterschrift
       en: Caption
+      fr: Légende
     type: textarea
